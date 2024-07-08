@@ -1,0 +1,11 @@
+services:
+  - name: flask-app
+    type: web
+    plan: free
+    region: oregon
+    env: python
+    build_command: pip install -r requirements.txt
+    start_command: python app.py
+    autoDeploy: true
+    debug: true
+    
